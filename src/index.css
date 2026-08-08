@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    font-family:"Manrope",sans-serif;
+
+    background:#fffaf4;
+
+    color:#3a2015;
+
+}
+
+
+#root{
+
+    width:100%;
+
+    min-height:100vh;
+
+}
+
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+.container{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+}

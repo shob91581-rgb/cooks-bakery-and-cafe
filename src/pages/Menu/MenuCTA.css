@@ -1,0 +1,388 @@
+.menu-cta {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 620px;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  background: #24130d;
+
+  color: #fff;
+}
+
+
+/* =========================================
+   BACKGROUND EFFECT
+========================================= */
+
+.menu-cta::before {
+  content: "";
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  right: -180px;
+  top: -180px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(184, 135, 82, 0.25);
+}
+
+
+.menu-cta::after {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  left: -170px;
+  bottom: -180px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(184, 135, 82, 0.15);
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.menu-cta-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 70% 40%,
+      rgba(184, 135, 82, 0.12),
+      transparent 35%
+    );
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.menu-cta-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1200px, 90%);
+
+  margin: 0 auto;
+
+  min-height: 620px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 80px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.menu-cta-content {
+  max-width: 650px;
+}
+
+
+.menu-cta-label {
+  display: block;
+
+  margin-bottom: 22px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 4px;
+
+  color: #c79a62;
+}
+
+
+.menu-cta-content h2 {
+  margin: 0;
+
+  font-family: "Fraunces", serif;
+
+  font-size: clamp(4rem, 7vw, 7rem);
+
+  line-height: 0.88;
+
+  font-weight: 400;
+
+  letter-spacing: -3px;
+
+  color: #f7efe5;
+}
+
+
+.menu-cta-content p {
+  max-width: 480px;
+
+  margin: 35px 0 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: rgba(247, 239, 229, 0.65);
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.menu-cta-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 40px;
+}
+
+
+.menu-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  min-width: 170px;
+
+  padding: 16px 22px;
+
+  text-decoration: none;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.menu-cta-button span {
+  font-size: 17px;
+
+  line-height: 1;
+}
+
+
+/* Primary */
+
+.menu-cta-button.primary {
+  background: #b88752;
+
+  color: #24130d;
+}
+
+
+.menu-cta-button.primary:hover {
+  background: #d2aa78;
+
+  transform: translateY(-3px);
+}
+
+
+/* Secondary */
+
+.menu-cta-button.secondary {
+  border: 1px solid rgba(247, 239, 229, 0.25);
+
+  color: #f7efe5;
+
+  background: transparent;
+}
+
+
+.menu-cta-button.secondary:hover {
+  background: #f7efe5;
+
+  color: #24130d;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   DECORATION
+========================================= */
+
+.menu-cta-decoration {
+  width: 320px;
+  height: 320px;
+
+  flex-shrink: 0;
+
+  border: 1px solid rgba(184, 135, 82, 0.35);
+
+  border-radius: 50%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transform: rotate(-8deg);
+
+  position: relative;
+}
+
+
+.menu-cta-decoration::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 18px;
+
+  border: 1px solid rgba(184, 135, 82, 0.2);
+
+  border-radius: 50%;
+}
+
+
+.menu-cta-decoration span {
+  position: relative;
+
+  z-index: 2;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 13px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 5px;
+
+  line-height: 1.7;
+
+  color: #c79a62;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .menu-cta {
+    min-height: 560px;
+  }
+
+  .menu-cta-container {
+    min-height: 560px;
+
+    gap: 40px;
+  }
+
+  .menu-cta-decoration {
+    width: 250px;
+    height: 250px;
+  }
+
+  .menu-cta-decoration span {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .menu-cta {
+    min-height: auto;
+
+    padding: 90px 0;
+  }
+
+  .menu-cta-container {
+    min-height: auto;
+
+    display: block;
+
+    width: 90%;
+  }
+
+  .menu-cta-content h2 {
+    font-size: clamp(3.5rem, 17vw, 5rem);
+
+    letter-spacing: -2px;
+  }
+
+  .menu-cta-content p {
+    font-size: 13px;
+
+    margin-top: 28px;
+  }
+
+  .menu-cta-buttons {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    margin-top: 32px;
+  }
+
+  .menu-cta-button {
+    width: 100%;
+  }
+
+  .menu-cta-decoration {
+    width: 220px;
+    height: 220px;
+
+    margin: 70px auto 0;
+  }
+
+}

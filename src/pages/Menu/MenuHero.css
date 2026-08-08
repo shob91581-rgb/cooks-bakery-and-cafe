@@ -1,0 +1,260 @@
+.menu-hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 72vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #2b160d;
+
+  color: #f7efe5;
+}
+
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.menu-hero-bg {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 70% 40%,
+      rgba(184, 135, 82, 0.18),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(184, 135, 82, 0.08),
+      transparent 30%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   DECORATIVE CIRCLE
+========================================= */
+
+.menu-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  right: -180px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: 1px solid rgba(184, 135, 82, 0.2);
+
+  border-radius: 50%;
+}
+
+
+.menu-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  right: -90px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: 1px solid rgba(184, 135, 82, 0.12);
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.menu-hero-content {
+  position: relative;
+
+  z-index: 3;
+
+  width: min(1200px, 90%);
+
+  margin: 0 auto;
+}
+
+
+.menu-hero-label {
+  display: block;
+
+  margin-bottom: 25px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 4px;
+
+  color: #c79a62;
+}
+
+
+.menu-hero-content h1 {
+  margin: 0;
+
+  font-family: "Fraunces", serif;
+
+  font-size: clamp(5rem, 10vw, 9rem);
+
+  line-height: 0.82;
+
+  font-weight: 400;
+
+  letter-spacing: -5px;
+
+  color: #f7efe5;
+}
+
+
+.menu-hero-content h1 em {
+  color: #c79a62;
+
+  font-weight: 400;
+}
+
+
+.menu-hero-content p {
+  margin: 38px 0 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: rgba(247, 239, 229, 0.65);
+}
+
+
+.menu-hero-line {
+  height: 1px;
+
+  margin-top: 35px;
+
+  background: #b88752;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.menu-hero-number {
+  position: absolute;
+
+  z-index: 3;
+
+  right: 5%;
+
+  bottom: 35px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  color: rgba(247, 239, 229, 0.4);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .menu-hero {
+    min-height: 65vh;
+  }
+
+  .menu-hero::before {
+    width: 450px;
+    height: 450px;
+
+    right: -200px;
+  }
+
+  .menu-hero::after {
+    width: 320px;
+    height: 320px;
+
+    right: -130px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .menu-hero {
+    min-height: 65vh;
+
+    align-items: center;
+  }
+
+  .menu-hero-content {
+    width: 88%;
+  }
+
+  .menu-hero-content h1 {
+    font-size: clamp(4.5rem, 20vw, 6rem);
+
+    letter-spacing: -3px;
+  }
+
+  .menu-hero-content p {
+    font-size: 13px;
+
+    margin-top: 28px;
+  }
+
+  .menu-hero-content p br {
+    display: none;
+  }
+
+  .menu-hero::before {
+    width: 350px;
+    height: 350px;
+
+    right: -220px;
+  }
+
+  .menu-hero::after {
+    width: 250px;
+    height: 250px;
+
+    right: -160px;
+  }
+
+}

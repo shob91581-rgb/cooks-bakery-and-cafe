@@ -1,0 +1,249 @@
+.category-tabs-section {
+  width: 100%;
+
+  padding: 100px 0 45px;
+
+  background: #f6f1e9;
+}
+
+
+.category-tabs-container {
+  width: min(1200px, 90%);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.category-tabs-heading {
+  margin-bottom: 42px;
+}
+
+
+.category-tabs-heading span {
+  display: block;
+
+  margin-bottom: 14px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 4px;
+
+  color: #b88752;
+}
+
+
+.category-tabs-heading h2 {
+  margin: 0;
+
+  font-family: "Fraunces", serif;
+
+  font-size: clamp(3rem, 5vw, 4.5rem);
+
+  line-height: 0.9;
+
+  font-weight: 500;
+
+  color: #2b160d;
+}
+
+
+/* =========================================
+   HORIZONTAL SCROLL
+========================================= */
+
+.category-scroll {
+  width: 100%;
+
+  overflow-x: auto;
+
+  overflow-y: hidden;
+
+  padding-bottom: 14px;
+
+  scrollbar-width: thin;
+
+  scrollbar-color: #b88752 transparent;
+
+  -webkit-overflow-scrolling: touch;
+
+  overscroll-behavior-x: contain;
+}
+
+
+/* Chrome / Edge / Safari */
+
+.category-scroll::-webkit-scrollbar {
+  height: 5px;
+}
+
+
+.category-scroll::-webkit-scrollbar-track {
+  background: rgba(43, 22, 13, 0.08);
+
+  border-radius: 10px;
+}
+
+
+.category-scroll::-webkit-scrollbar-thumb {
+  background: #b88752;
+
+  border-radius: 10px;
+}
+
+
+.category-scroll::-webkit-scrollbar-thumb:hover {
+  background: #8f6338;
+}
+
+
+/* =========================================
+   CATEGORY ROW
+========================================= */
+
+.category-tabs {
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  align-items: center;
+
+  gap: 10px;
+
+  width: max-content;
+
+  min-width: 100%;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.category-tab {
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  min-height: 44px;
+
+  padding: 12px 19px;
+
+  border: 1px solid rgba(43, 22, 13, 0.15);
+
+  border-radius: 0;
+
+  background: transparent;
+
+  color: #806d62;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.3px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.category-tab:hover {
+  border-color: #b88752;
+
+  color: #2b160d;
+
+  transform: translateY(-2px);
+}
+
+
+.category-tab.active {
+  background: #2b160d;
+
+  border-color: #2b160d;
+
+  color: #f7efe5;
+}
+
+
+.category-tab-dot {
+  width: 5px;
+
+  height: 5px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #c79a62;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .category-tabs-section {
+    padding: 80px 0 40px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .category-tabs-section {
+    padding: 70px 0 35px;
+  }
+
+  .category-tabs-container {
+    width: 90%;
+  }
+
+  .category-tabs-heading {
+    margin-bottom: 30px;
+  }
+
+  .category-tabs-heading h2 {
+    font-size: 3rem;
+  }
+
+  .category-tab {
+    min-height: 42px;
+
+    padding: 11px 16px;
+
+    font-size: 9px;
+  }
+
+}

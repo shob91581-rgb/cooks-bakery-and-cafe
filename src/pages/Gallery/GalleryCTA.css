@@ -1,0 +1,212 @@
+.gallery-cta {
+  padding: 0 6vw 110px;
+
+  background: #f6f1e8;
+}
+
+
+.gallery-cta-inner {
+  position: relative;
+
+  min-height: 570px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      rgba(28, 18, 12, 0.72),
+      rgba(28, 18, 12, 0.82)
+    ),
+    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2200&q=90")
+      center / cover no-repeat;
+}
+
+
+.gallery-cta-content {
+  width: min(850px, 90%);
+
+  text-align: center;
+
+  color: white;
+
+  padding: 100px 20px;
+}
+
+
+.gallery-cta-content > span {
+  display: block;
+
+  margin-bottom: 23px;
+
+  color: #c6a477;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 4px;
+}
+
+
+.gallery-cta-content h2 {
+  margin: 0;
+
+  font-size: clamp(48px, 6vw, 82px);
+
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  letter-spacing: -4px;
+}
+
+
+.gallery-cta-content h2 em {
+  font-family: "Cormorant Garamond", serif;
+
+  font-style: italic;
+
+  font-weight: 400;
+}
+
+
+.gallery-cta-content p {
+  max-width: 580px;
+
+  margin: 30px auto 0;
+
+  color: rgba(255,255,255,.78);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* BUTTONS */
+
+.gallery-cta-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 38px;
+}
+
+
+.gallery-cta-buttons a {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 50px;
+
+  padding: 0 27px;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  transition:
+    background .3s ease,
+    color .3s ease,
+    border .3s ease;
+}
+
+
+.gallery-cta-primary {
+  background: #f5eee3;
+
+  color: #241812;
+
+  border: 1px solid #f5eee3;
+}
+
+
+.gallery-cta-primary span {
+  margin-left: 20px;
+
+  font-size: 16px;
+}
+
+
+.gallery-cta-primary:hover {
+  background: transparent;
+
+  color: white;
+}
+
+
+.gallery-cta-secondary {
+  color: white;
+
+  border: 1px solid rgba(255,255,255,.55);
+}
+
+
+.gallery-cta-secondary:hover {
+  background: white;
+
+  color: #241812;
+}
+
+
+@media (max-width: 600px) {
+
+  .gallery-cta {
+    padding: 0 20px 65px;
+  }
+
+
+  .gallery-cta-inner {
+    min-height: 540px;
+  }
+
+
+  .gallery-cta-content {
+    padding: 70px 20px;
+  }
+
+
+  .gallery-cta-content h2 {
+    font-size: 46px;
+
+    letter-spacing: -2px;
+  }
+
+
+  .gallery-cta-content p {
+    font-size: 14px;
+  }
+
+
+  .gallery-cta-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+
+  .gallery-cta-buttons a {
+    width: 100%;
+  }
+
+}

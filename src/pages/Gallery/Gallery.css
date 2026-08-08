@@ -1,0 +1,716 @@
+/* =========================================
+   GALLERY PAGE
+========================================= */
+
+.gallery-page {
+  width: 100%;
+  overflow: hidden;
+  background: #f6f1e8;
+  color: #241812;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.gallery-hero {
+  position: relative;
+  min-height: 76vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  color: #fff;
+}
+
+.gallery-hero-image {
+  position: absolute;
+  inset: 0;
+
+  background:
+    url("https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=2200&q=90")
+    center / cover no-repeat;
+
+  transform: scale(1.02);
+}
+
+.gallery-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(20, 13, 9, 0.25),
+      rgba(20, 13, 9, 0.75)
+    );
+}
+
+.gallery-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(900px, 90%);
+
+  padding: 140px 20px 100px;
+
+  text-align: center;
+}
+
+.gallery-hero-content > span {
+  display: block;
+
+  margin-bottom: 25px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 5px;
+}
+
+.gallery-hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(62px, 9vw, 120px);
+  line-height: 0.84;
+
+  font-weight: 500;
+
+  letter-spacing: -5px;
+}
+
+.gallery-hero-content h1 em {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 400;
+
+  letter-spacing: -2px;
+}
+
+.gallery-hero-content p {
+  max-width: 620px;
+
+  margin: 32px auto 0;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.gallery-intro {
+  display: grid;
+
+  grid-template-columns: 0.3fr 1fr;
+
+  gap: 80px;
+
+  padding: 125px 7vw 90px;
+}
+
+.gallery-intro-label {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  color: #9a7047;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+.gallery-intro-content {
+  max-width: 850px;
+}
+
+.gallery-intro-content h2 {
+  margin: 0;
+
+  font-size: clamp(48px, 6vw, 78px);
+
+  line-height: 0.92;
+
+  font-weight: 500;
+
+  letter-spacing: -4px;
+}
+
+.gallery-intro-content h2 em {
+  font-family: "Cormorant Garamond", serif;
+
+  font-style: italic;
+
+  font-weight: 400;
+}
+
+.gallery-intro-content p {
+  max-width: 560px;
+
+  margin-top: 30px;
+
+  color: #756d65;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   GALLERY GRID
+========================================= */
+
+.gallery-grid-section {
+  padding: 30px 6vw 130px;
+}
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+
+  gap: 55px 24px;
+}
+
+
+/* ITEMS */
+
+.gallery-item {
+  min-width: 0;
+}
+
+.gallery-item-1 {
+  grid-column: span 7;
+}
+
+.gallery-item-2 {
+  grid-column: span 5;
+
+  margin-top: 100px;
+}
+
+.gallery-item-3 {
+  grid-column: span 4;
+}
+
+.gallery-item-4 {
+  grid-column: span 4;
+
+  margin-top: 80px;
+}
+
+.gallery-item-5 {
+  grid-column: span 4;
+}
+
+.gallery-item-6 {
+  grid-column: span 5;
+}
+
+.gallery-item-7 {
+  grid-column: span 7;
+
+  margin-top: 120px;
+}
+
+.gallery-item-8 {
+  grid-column: span 4;
+}
+
+.gallery-item-9 {
+  grid-column: span 4;
+
+  margin-top: 80px;
+}
+
+.gallery-item-10 {
+  grid-column: span 4;
+}
+
+.gallery-item-11 {
+  grid-column: span 7;
+}
+
+.gallery-item-12 {
+  grid-column: span 5;
+
+  margin-top: 100px;
+}
+
+
+/* IMAGE */
+
+.gallery-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #ded5c8;
+}
+
+.gallery-item-1 .gallery-image-wrapper,
+.gallery-item-7 .gallery-image-wrapper,
+.gallery-item-11 .gallery-image-wrapper {
+  aspect-ratio: 1.15 / 1;
+}
+
+.gallery-item-2 .gallery-image-wrapper,
+.gallery-item-12 .gallery-image-wrapper {
+  aspect-ratio: 0.8 / 1;
+}
+
+.gallery-item-3 .gallery-image-wrapper,
+.gallery-item-4 .gallery-image-wrapper,
+.gallery-item-5 .gallery-image-wrapper,
+.gallery-item-8 .gallery-image-wrapper,
+.gallery-item-9 .gallery-image-wrapper,
+.gallery-item-10 .gallery-image-wrapper {
+  aspect-ratio: 0.88 / 1;
+}
+
+.gallery-item-6 .gallery-image-wrapper {
+  aspect-ratio: 1 / 1;
+}
+
+
+.gallery-image-wrapper img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.8s cubic-bezier(.2,.7,.2,1);
+}
+
+.gallery-item:hover .gallery-image-wrapper img {
+  transform: scale(1.06);
+}
+
+
+/* IMAGE OVERLAY */
+
+.gallery-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 22px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.15),
+    transparent 45%,
+    rgba(0,0,0,0.4)
+  );
+
+  color: #fff;
+
+  opacity: 0;
+
+  transition: opacity 0.4s ease;
+}
+
+.gallery-item:hover .gallery-image-overlay {
+  opacity: 1;
+}
+
+.gallery-image-overlay span:first-child {
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.gallery-image-overlay span:last-child {
+  font-size: 20px;
+}
+
+
+/* ITEM INFO */
+
+.gallery-item-info {
+  display: flex;
+
+  align-items: baseline;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-top: 15px;
+}
+
+.gallery-item-info > span {
+  color: #9a7047;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.gallery-item-info h3 {
+  margin: 0;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  text-align: right;
+}
+
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.gallery-quote {
+  padding: 140px 7vw;
+
+  background: #e9e2d6;
+}
+
+.gallery-quote-inner {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.gallery-quote-inner > span {
+  display: block;
+
+  margin-bottom: 28px;
+
+  color: #9a7047;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 4px;
+}
+
+.gallery-quote-inner h2 {
+  margin: 0;
+
+  font-size: clamp(55px, 7vw, 100px);
+
+  line-height: 0.88;
+
+  font-weight: 500;
+
+  letter-spacing: -5px;
+}
+
+.gallery-quote-inner h2 em {
+  font-family: "Cormorant Garamond", serif;
+
+  font-style: italic;
+
+  font-weight: 400;
+}
+
+.gallery-quote-inner p {
+  margin-top: 32px;
+
+  color: #756d65;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.gallery-cta {
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  color: #fff;
+}
+
+.gallery-cta-image {
+  position: absolute;
+  inset: 0;
+
+  background:
+    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2200&q=90")
+    center / cover no-repeat;
+}
+
+.gallery-cta-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(24, 16, 11, 0.72);
+}
+
+.gallery-cta-content {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+}
+
+.gallery-cta-content > span {
+  display: block;
+
+  margin-bottom: 25px;
+
+  color: #c5a477;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 4px;
+}
+
+.gallery-cta-content h2 {
+  margin: 0;
+
+  font-size: clamp(65px, 8vw, 115px);
+
+  line-height: 0.82;
+
+  font-weight: 400;
+
+  letter-spacing: -5px;
+}
+
+.gallery-cta-content h2 em {
+  font-family: "Cormorant Garamond", serif;
+
+  font-style: italic;
+}
+
+.gallery-cta-content a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-top: 40px;
+
+  padding: 16px 28px;
+
+  border: 1px solid rgba(255,255,255,.6);
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  transition:
+    background .3s ease,
+    color .3s ease;
+}
+
+.gallery-cta-content a:hover {
+  background: #fff;
+
+  color: #241812;
+}
+
+.gallery-cta-content a span {
+  font-size: 17px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .gallery-intro {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    padding: 90px 5vw 70px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px 18px;
+  }
+
+  .gallery-item-1,
+  .gallery-item-2,
+  .gallery-item-7,
+  .gallery-item-11,
+  .gallery-item-12 {
+    grid-column: span 1;
+
+    margin-top: 0;
+  }
+
+  .gallery-item-3,
+  .gallery-item-4,
+  .gallery-item-5,
+  .gallery-item-6,
+  .gallery-item-8,
+  .gallery-item-9,
+  .gallery-item-10 {
+    grid-column: span 1;
+
+    margin-top: 0;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .gallery-hero {
+    min-height: 66vh;
+  }
+
+  .gallery-hero-content {
+    padding: 100px 20px;
+  }
+
+  .gallery-hero-content > span {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+  }
+
+  .gallery-hero-content h1 {
+    font-size: 57px;
+
+    letter-spacing: -3px;
+  }
+
+  .gallery-hero-content p {
+    font-size: 14px;
+  }
+
+  .gallery-intro {
+    padding: 75px 20px 60px;
+  }
+
+  .gallery-intro-content h2 {
+    font-size: 45px;
+
+    letter-spacing: -2px;
+  }
+
+  .gallery-grid-section {
+    padding: 20px 20px 80px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .gallery-item-1,
+  .gallery-item-2,
+  .gallery-item-3,
+  .gallery-item-4,
+  .gallery-item-5,
+  .gallery-item-6,
+  .gallery-item-7,
+  .gallery-item-8,
+  .gallery-item-9,
+  .gallery-item-10,
+  .gallery-item-11,
+  .gallery-item-12 {
+    grid-column: span 1;
+
+    margin-top: 0;
+  }
+
+  .gallery-item-1 .gallery-image-wrapper,
+  .gallery-item-7 .gallery-image-wrapper,
+  .gallery-item-11 .gallery-image-wrapper,
+  .gallery-item-2 .gallery-image-wrapper,
+  .gallery-item-12 .gallery-image-wrapper {
+    aspect-ratio: 1 / 1.15;
+  }
+
+  .gallery-item-info h3 {
+    font-size: 15px;
+  }
+
+  .gallery-quote {
+    padding: 90px 20px;
+  }
+
+  .gallery-quote-inner h2 {
+    font-size: 54px;
+
+    letter-spacing: -3px;
+  }
+
+  .gallery-cta {
+    min-height: 560px;
+  }
+
+  .gallery-cta-content {
+    width: 90%;
+  }
+
+  .gallery-cta-content h2 {
+    font-size: 67px;
+
+    letter-spacing: -3px;
+  }
+
+  .gallery-cta-content a {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}
